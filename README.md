@@ -23,11 +23,11 @@ The images above were obtained with the plugin dialog setup, please, see below. 
 
 **Parameters:**
 
-*Mean PE Intensity <0, Max>*: Threshold - when a specific mean intensity (MI) is entered, then labels corresponding to PE spots with lower MI, i.e. darker ones, are removed from visualization in the 2nd channel (middle-Filtered image). *Max* here is the maximum MI of a PE spot found in the open data. The first message below sliders, in **black**, shows the selected value of MI normalized to *Max* and expressed in percents.
+*Mean PE Intensity <0, Max>*: Threshold - when a specific mean intensity (MI) is entered, then labels corresponding to PE spots with lower MI, i.e. darker ones, are removed from visualization in the 2nd channel (middle-Filtered image). In other words, for visualization in the filtered image we choose here only labels that correspond to PE spots with MI greater than the threshold. *Max* here is the maximum MI of a PE spot found in the open data. The first message below sliders, in **black**, shows the selected value of MI normalized to *Max* and expressed in percents.
 
-*Grid Density <1-30>*: Defines number and sizes of areas of the heatmap. The size of the heatmap image matrix is the same like the size of original data. If the selected value is 1, the heatmap contains only 1 real value expressing a ratio of labels remaining in the full filtered image with respect to all labels in the full original image. If the value is 2, heatmap is split to a 2x2 grid and these ratios in real numbers are computed for all four heatmap areas separately, i.e. in smaller areas, and depicted etc. When moving with a cursor in such heatmap area, the corresponding ratio in percents is shown in the status of the Fiji window.
+*Grid Density <1-30>*: Defines number and sizes of areas of the heatmap. The size of the heatmap image matrix is the same like the size of original data. If the selected value is 1, the heatmap contains only 1 real value expressing a ratio of labels remaining in the filtered image with respect to all labels in the original image. If the value is 2, the heatmap is split to a 2x2 grid, original and filtered images as well, and these ratios are computed for all four  areas separately etc. When moving with a cursor in such heatmap area, the corresponding ratio in percents is shown in the status of the Fiji window.
 
-For each combination of both parameters, *Min* and *Max* ratios in the heatmap are visualized in the **red** message in the plugin dialog, just to understand which colors of applied LUT corresponds to minimum and maximum values, respectively.
+For each combination of both parameters, *Min* and *Max* ratios in the heatmap are visualized in the **red** message in the plugin dialog, just to understand which colors in the heatmap, accorging to LUT applied, correspond to minimum and maximum values, respectively.
 
 The **blue** message diplays plugin status: *Computing...* or *Ready*.
 
