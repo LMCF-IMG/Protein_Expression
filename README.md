@@ -38,7 +38,7 @@ The **blue** message diplays plugin status: *Computing...* or *Ready*.
 - The plugin is used for visualization of spatial distribution of "superbright" PE spots and will be used for comparison of these distributions in normal and treated mouse brains.
 - It is more efficient, firstly, to apply the threshold for label removing (*Mean PE Intensity*) and, secondly, to vary with *Grid Density*, since computation of multiple heatmap areas is more intensive. From this reason the computation was implemented in parallel threads.
 - It is more efficient to enter values of the parameters into the boxes than to move with the sliders, just to avoid computing multiple intermediate results done by the slider movement.
-- An example image is available for downloading with the plugin file as well.
+- An example image in ZIP is available for downloading with the plugin file as well.
 
 **Installation**
 
