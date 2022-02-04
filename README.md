@@ -19,7 +19,7 @@ When the plugin is applied, then three image windows appear. Left-an original co
 
 ![PluginAppliedWithLUT](https://user-images.githubusercontent.com/63607289/152383091-526f7efa-822b-40e4-b6fe-00876216b099.jpg)
 
-The images above were obtained with the plugin dialog setup, please, see below. Each label in the 2nd channel correspond to a single protein expression (PE) spot in the 1st channel. Each PE spot area in the 1st channel has got its intensity mean.
+The images above were obtained with the plugin dialog setup, please, see below. Each label in the 2nd channel correspond to a single PE spot in the 1st channel. Each PE spot area in the 1st channel has got its intensity mean.
 
 **Parameters:**
 
