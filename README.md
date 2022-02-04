@@ -7,7 +7,7 @@ Visualizes a heatmap of distribution of protein expression spots in images of mo
 
 As an input the plugin takes a *2-channel 32-bit image data*.
 
-In the 1st channel, left-in grey, there is a multi-tile picture of a physical slice of a mouse brain captured by Leica DM6000 widefield microscope in the transmission mode (provided by Dr. Helena Janíčková, Laboratory of Neurochemistry, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic). Protein expression, FOS protein, is depicted by bright spots. In the 2nd channel, middle, there is a result of a segmentation procedure with the bright spots in the 1st channel labeled by colors. Each segmented spot has been labeled uniquely by a different color. On the right there is the input for the plugin - both channels, the original image and labels, together in one composite image window.
+In the 1st channel, left-in grey, there is a multi-tile picture of a physical slice of a mouse brain captured by Leica DM6000 widefield microscope in the transmission mode (provided by Dr. Helena Janíčková, Laboratory of Neurochemistry, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic). Protein expression, FOS protein, is depicted by bright spots. In the 2nd channel, middle, there is a result of a segmentation procedure with the bright spots in the 1st channel labeled by colors. Each segmented spot has been labeled uniquely by a different color. On the right there is the input for the plugin - both channels, the original image and labels, together in one composite image.
 
 ![FOS-EX01-Panel-Input](https://user-images.githubusercontent.com/63607289/152369509-913c61f3-02aa-4e02-be6d-da42d72cf0e8.jpg)
 
