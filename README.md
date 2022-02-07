@@ -23,7 +23,7 @@ The images above were obtained with the plugin dialog setup, please, see below. 
 
 **Parameters:**
 
-*Mean PE Intensity <0, Max>*: Threshold - for visualization in the filtered image, middle, we choose here only labels that correspond to PE spots with MI greater than the threshold. In other words,  *Max* here is the maximum MI of a PE spot found in the open data. The first message below sliders, in **black**, shows the selected value of MI normalized to *Max* and expressed in percents.
+*Mean PE Intensity <0, Max>*: Threshold - for visualization in the filtered image, middle, we choose only labels that correspond to PE spots with their MI greater than the threshold. *Max* here is the maximum MI of a PE spot found in the open data. The first message below sliders, in **black**, shows the selected value of MI normalized to *Max* and expressed in percents.
 
 *Grid Density <1-30>*: Defines number and sizes of areas of the heatmap. The size of the heatmap image matrix is the same like the size of original data. If the selected value is 1, the heatmap contains only 1 real value expressing a ratio of labels remaining in the filtered image with respect to all labels in the original image. If the value is 2, the heatmap is split to a 2x2 grid areas, original and filtered images as well, and these ratios are computed for all four areas separately etc. When moving with a cursor in such heatmap area, the corresponding ratio in percents is shown in the status area of the Fiji window.
 
