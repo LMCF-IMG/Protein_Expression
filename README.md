@@ -15,7 +15,7 @@ Protein expression (PE) spots were segmented with the help of [StarDist](https:/
 
 ![Labkit](https://user-images.githubusercontent.com/63607289/152375382-8ab50351-d277-458d-b7ab-93c95a31b23f.jpg)
 
-When the plugin is applied, then three image windows appear. Left-an original composite image, middle-an image with labels filtered out according to mean intensity of PE spots in the 1st channel, right-the resulting heatmap of the size 20x20 with ratios of numbers of labels in grid areas in the filtered and original images, respectively. In the very right picture I added a LUT used.
+When the plugin is applied, then three image windows appear. Left-an original composite image, middle-an image with labels filtered out according to mean intensity of PE spots in the 1st channel, right-the resulting heatmap of the size, here, 20x20 with ratios of numbers of labels in grid areas in the filtered and original images, respectively. In the very right picture I added a LUT used.
 
 ![PluginAppliedWithLUT](https://user-images.githubusercontent.com/63607289/152383091-526f7efa-822b-40e4-b6fe-00876216b099.jpg)
 
