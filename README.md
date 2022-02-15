@@ -1,5 +1,5 @@
 # Protein_Expression
-Visualizes a heatmap of distribution of protein expression spots in images of mouse brain physical slices acquired by widefield transmission microscopy.
+Visualizes a heatmap of distribution of *nuclear protein c-Fos expression spots* in images of mouse brain physical slices acquired by widefield transmission microscopy.
 
 **Plugin for [ImageJ/Fiji](https://fiji.sc/).**
 
@@ -7,15 +7,15 @@ Visualizes a heatmap of distribution of protein expression spots in images of mo
 
 As an input the plugin takes a *2-channel 32-bit image data*.
 
-In the 1st channel, left-in grey, there is a multi-tile picture of a physical slice of a mouse brain captured by Leica DM6000 widefield microscope in the transmission mode (created and provided by Dr. Helena Janíčková, Laboratory of Neurochemistry, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic). Protein expression, FOS protein, is depicted by bright spots. In the 2nd channel, middle, there is a result of a segmentation procedure with the bright spots in the 1st channel labeled by colors. Each segmented spot has been labeled uniquely by a different color. On the right there is the input for the plugin - both channels, the original image and labels, together in one composite image.
+In the 1st channel, left - in grey, there is a multi-tile picture of a physical coronal slice of the mouse brain captured by Leica DM6000 widefield microscope in the transmission mode (picture created and provided by Dr. Helena Janíčková, Laboratory of Neurochemistry, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic). c-Fos expression was visualized with immunohistochemistry and DAB staining. Nuclear expression of c-Fos protein is depicted by bright spots. In the 2nd channel, middle, there is a result of a segmentation procedure with the original bright spots of the 1st channel now labeled by colors. Each segmented (i.e. identified as c-Fos-positive) spot has been labeled uniquely by a different color. On the right there is the input for the plugin - both channels, the original image and labels, together in one composite image.
 
 ![FOS-EX01-Panel-Input](https://user-images.githubusercontent.com/63607289/152369509-913c61f3-02aa-4e02-be6d-da42d72cf0e8.jpg)
 
-Protein expression (PE) spots were segmented with the help of [StarDist](https://github.com/stardist/stardist) project. A new DL model was created and trained with sub-images of PE spots manually annotated by [Labkit](https://imagej.net/plugins/labkit/). Left-a sub-image, right-an example of manual annotation.
+Protein expression (PE) spots were segmented with the help of [StarDist](https://github.com/stardist/stardist) project. A new deep-learning-based model was created and trained with sub-images of PE spots manually annotated by [Labkit](https://imagej.net/plugins/labkit/). Left-a sub-image, right-an example of manual annotation.
 
 ![Labkit](https://user-images.githubusercontent.com/63607289/152375382-8ab50351-d277-458d-b7ab-93c95a31b23f.jpg)
 
-When the plugin is applied, then three image windows appear. Left-an original composite image, middle-an image with labels filtered out according to mean intensity of PE spots in the 1st channel, right-the resulting heatmap of the size, here, 20x20 with ratios of numbers of labels in grid areas in the filtered and original images, respectively. In the very right picture I added a LUT used.
+When the plugin is applied, then three image windows appear. Left - an original composite image showing all segmented PE spots (i.e. all c-Fos-positive nuclei in the given area); middle - an image showing only the PE spots passing a predefined mean intensity threshold (here, 0-221); right - the resulting heatmap of the predefined size (here, 20x20) showing ratios of PE spots above threshold and all segmented spots in individual grids (that is, ratios of PE spots in the filtered and original image, respectively). In the very right picture I added a LUT used.
 
 ![PluginAppliedWithLUT](https://user-images.githubusercontent.com/63607289/152383091-526f7efa-822b-40e4-b6fe-00876216b099.jpg)
 
