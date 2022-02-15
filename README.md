@@ -1,5 +1,5 @@
 # Protein_Expression
-Visualizes a heatmap of distribution of *nuclear protein c-Fos expression spots* in images of mouse brain physical slices acquired by widefield transmission microscopy.
+Visualizes a heatmap of distribution of *nuclear protein c-Fos expression* spots in images of mouse brain physical slices acquired by widefield transmission microscopy.
 
 **Plugin for [ImageJ/Fiji](https://fiji.sc/).**
 
