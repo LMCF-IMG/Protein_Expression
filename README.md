@@ -17,7 +17,7 @@ Protein expression (PE) spots were segmented with the help of [StarDist](https:/
 
 When the plugin is applied, then three image windows appear. Left - an original composite image showing all segmented PE spots (i.e. all c-Fos-positive nuclei in the given area); middle - an image showing only the PE spots passing a predefined mean intensity threshold (here, 0-221); right - the resulting heatmap of the predefined size (here, 20x20) showing ratios of PE spots above threshold and all segmented spots in individual grids (that is, ratios of PE spots in the filtered and original image, respectively). In the very right picture I added a LUT used.
 
-![PluginAppliedWithLUT](https://user-images.githubusercontent.com/63607289/152383091-526f7efa-822b-40e4-b6fe-00876216b099.jpg)
+![Plugins_Image_Windows](https://user-images.githubusercontent.com/63607289/154267058-730a847d-2afd-4417-9d26-88dbc7e8dfd6.jpg)
 
 The images above were obtained with the plugin dialog setup, please, see below. Each label in the 2nd channel correspond to a single PE spot in the 1st channel. Each PE spot area in the 1st channel has got its mean intensity (MI).
 
