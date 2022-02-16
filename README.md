@@ -9,7 +9,7 @@ As an input the plugin takes a *2-channel 32-bit image data*.
 
 In the 1st channel, left - in grey, there is a multi-tile picture of a physical coronal slice of the mouse brain captured by Leica DM6000 widefield microscope in the transmission mode (the picture created and provided by Dr. Helena Janíčková, Laboratory of Neurochemistry, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic). c-Fos expression was visualized with immunohistochemistry and DAB staining. Nuclear expression of c-Fos protein is depicted by bright spots. In the 2nd channel, middle, there is a result of a segmentation procedure with the original bright spots of the 1st channel now labeled by colors. Each segmented (i.e. identified as c-Fos-positive) spot has been labeled uniquely by a different color. On the right there is the input for the plugin - both channels, the original image and labels, together in one composite image.
 
-![FOS-EX01-Panel-Input](https://user-images.githubusercontent.com/63607289/152369509-913c61f3-02aa-4e02-be6d-da42d72cf0e8.jpg)
+![FOS_Labels](https://user-images.githubusercontent.com/63607289/154263802-09c74e68-7f51-4653-8870-0e72a6174eec.jpg)
 
 Protein expression (PE) spots were segmented with the help of [StarDist](https://github.com/stardist/stardist) project. A new deep-learning-based model was created and trained with sub-images of PE spots manually annotated by [Labkit](https://imagej.net/plugins/labkit/). Left-a sub-image, right-an example of manual annotation.
 
