@@ -31,7 +31,7 @@ For each combination of the two parameters described above, *Min* and *Max* rati
 
 The **blue** message diplays plugin status: *Computing...* or *Ready*.
 
-![PE-Plugin-Dialog](https://user-images.githubusercontent.com/63607289/152386388-0b4b7efb-ad14-4372-b217-1b74caec84b1.jpg)
+![Dialog](https://user-images.githubusercontent.com/63607289/154267560-3b79c05d-640b-4764-b466-7de4c08e2608.jpg)
 
 **Remarks**
 
