@@ -33,7 +33,7 @@ For each combination of the two parameters described above, *Min* and *Max* valu
 
 The **blue** message diplays plugin status: *Computing...* or *Ready*.
 
-The last **black** message informs that when pressing OK button, a Log file appears that contains data about all labels in the original image together with positions of their centroids (X, Y) and their corresponding mean intensity, then the dialog closes. When pressing X, the dialog closes only.
+The last **black** message informs that when pressing OK button, a Log file appears that contains data about all labels in the original image together with positions of their centroids (X, Y) and their corresponding mean intensity, then the dialog closes. When pressing X, the dialog closes only, without showing the Log file.
 
 ![Dialog](https://user-images.githubusercontent.com/63607289/154267560-3b79c05d-640b-4764-b466-7de4c08e2608.jpg)
 
