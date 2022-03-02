@@ -23,20 +23,24 @@ The images above were obtained with the plugin dialog setup, please, see below. 
 
 **Parameters:**
 
-*Mean PE Intensity <0, Max>*: Threshold - for visualization in the filtered image, middle, we choose only labels that correspond to PE spots with their MI greater than the defined threshold. *Max* here is the maximum MI of a PE spot found in the open data. The first message below sliders, in **black**, shows the selected value of MI threshold normalized to *Max* and expressed in percentage.
+*Visualization Method*: In the heatmap it is possible to visualize either *PE Spot Ratios*, i.e. ratio of filtered PE spots with respect to all PE Spots in the given grid area, or *PE Spots Absolute Numbers*, i.e. just a number of PE Spots remaining after filtration.
 
-*Grid Density <1-30>*: Defines number and size of individual grids of the heatmap. The size of the heatmap image matrix is the same as the size of the original image. If the selected value is 1, the heatmap contains only 1 real value expressing a ratio of labels with MI above the threshold remaining in the filtered image to all labels in the original image. If the value is 2, the heatmap is split to a 2x2 grid areas, original and filtered images as well, and these ratios are computed for all four areas separately, etc. When moving with a cursor in such heatmap area, the corresponding ratio in percentage is shown in the status area of the Fiji window.
+*Mean PE Spot Intensity <0, Max>*: Threshold - for visualization in the filtered image, middle, we choose only labels that correspond to PE spots with their MI greater than the defined threshold. *Max* here is the maximum MI of a PE spot found in the open data. The first message below sliders, in **black**, shows the selected value of MI threshold normalized to *Max* and expressed in percentage.
 
-For each combination of the two parameters described above, *Min* and *Max* ratios in the heatmap are visualized in the **red** message in the plugin dialog, to indicate which colors in the heatmap, according to LUT applied, correspond to minimum and maximum values, respectively.
+*Grid Density <1-30>*: Defines number and size of individual grids of the heatmap. The size of the heatmap image matrix is the same as the size of the original image. If the selected value is 1, the heatmap contains only 1 real value expressing an absolute value/ratio of labels with MI above the threshold remaining in the filtered image to all labels in the original image. If the value is 2, the heatmap is split to a 2x2 grid areas, original and filtered images as well, and these numbers are computed for all four areas separately, etc. When moving with a cursor in such heatmap area, the corresponding ratio in percentage or absolute number is shown in the status area of the Fiji window.
+
+For each combination of the two parameters described above, *Min* and *Max* values in the heatmap are visualized in the **red** message in the plugin dialog, to indicate which colors in the heatmap, according to LUT applied, correspond to minimum and maximum, respectively.
 
 The **blue** message diplays plugin status: *Computing...* or *Ready*.
+
+The last **black** message informs that when pressing OK button, a Log file appears that contains data about all labels in the original image together with positions of their centroids (X, Y) and their corresponding mean intensity, then the dialog closes. When pressing X, the dialog closes only.
 
 ![Dialog](https://user-images.githubusercontent.com/63607289/154267560-3b79c05d-640b-4764-b466-7de4c08e2608.jpg)
 
 **Remarks**
 
 - The plugin is used for visualization of spatial distribution of "super bright" PE spots (showing strong c-Fos expression) and will be used for comparison of these distributions in normal and treated mouse brains.
-- It is more efficient, firstly, to apply the threshold for label removing (*Mean PE Intensity*) and, secondly, to vary with *Grid Density*, since computation of multiple heatmap areas is more intensive. For this reason the computation was implemented in parallel threads.
+- It is more efficient, firstly, to apply the threshold for label removing (*Mean PE Spot Intensity*) and, secondly, to vary with *Grid Density*, since computation of multiple heatmap areas is more intensive. For this reason the computation was implemented in parallel threads.
 - It is more efficient to enter values of the parameters into the boxes than to move with the sliders, just to avoid computing multiple intermediate results done by the slider movement.
 - An example image in ZIP is available for downloading with the plugin file as well.
 
