@@ -23,7 +23,7 @@ The images above were obtained with the plugin dialog setup, please, see below. 
 
 **Parameters:**
 
-*Visualization Method*: In the heatmap it is possible to visualize either *PE Spot Ratios*, i.e. ratio of filtered PE spots with respect to all PE Spots in the given grid area, or *PE Spots Absolute Numbers*, i.e. just a number of PE Spots remaining after filtration.
+*Visualization Method*: In the heatmap it is possible to visualize either *PE Spot Ratios*, i.e. ratio of filtered PE spots with respect to all PE spots in the given grid area, or *PE Spots Absolute Numbers*, i.e. just a number of PE Spots remaining after filtration.
 
 *Mean PE Spot Intensity <0, Max>*: Threshold - for visualization in the filtered image, middle, we choose only labels that correspond to PE spots with their MI greater than the defined threshold. *Max* here is the maximum MI of a PE spot found in the open data. The first message below sliders, in **black**, shows the selected value of MI threshold normalized to *Max* and expressed in percentage.
 
