@@ -41,7 +41,6 @@ The last **black** message informs that when pressing OK button, a Log file appe
 
 - The plugin is used for visualization of spatial distribution of "super bright" PE spots (showing strong c-Fos expression) and will be used for comparison of these distributions in normal and treated mouse brains.
 - It is more efficient, firstly, to apply the threshold for label removing (*Mean PE Spot Intensity*) and, secondly, to vary with *Grid Density*, since computation of multiple heatmap areas is more intensive. For this reason the computation was implemented in parallel threads.
-- It is more efficient to enter values of the parameters into the boxes than to move with the sliders, just to avoid computing multiple intermediate results done by the slider movement.
 - An example image in ZIP is available for downloading with the plugin file as well.
 
 **Installation**
